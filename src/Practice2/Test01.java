@@ -1,4 +1,4 @@
-//package Practice2;
+package Practice2;
 //
 //import java.util.Scanner;
 //
@@ -127,22 +127,22 @@
 
 
 
-//package Practice;
-////
-////import java.util.Scanner;
-////
-////public class Test04{
-////	public static void main(String[] args) {
-////		System.out.println(" 입 력 하 세 요 :  ");
-////		
-////		Scanner scan = new Scanner(System.in);
-////		int input = scan.nextInt();
-////		
-////		for(int i=1; i<=input; i++) {        //  i는 구구단 시작단 
-////			System.out.println(i * input);
-////		} 
-////	}
-////}
+//package Practice2;
+//
+//import java.util.Scanner;
+//
+//public class Test01{
+//	public static void main(String[] args) {
+//		System.out.println(" 입 력 하 세 요 :  ");
+//		
+//		Scanner scan = new Scanner(System.in);
+//		int input = scan.nextInt();
+//		
+//		for(int i=1; i<=input; i++) {        //  i는 구구단 시작단 
+//			System.out.println(i * input);
+//		} 
+//	}
+//}
 //
 //
 //
@@ -164,6 +164,29 @@
 //		
 //	}
 //}
+
+
+
+import java.util.Scanner;
+
+public class Test01{
+	public static void main(String[] args) {
+		System.out.println(" 입 력 :  ");
+		
+		Scanner scan = new Scanner(System.in);
+		int first = scan.nextInt();
+		int second = scan.nextInt();
+		int third = scan.nextInt();
+		
+		System.out.println("그냥한번불러봤 어~: " +third);
+		
+		System.out.println(first + second);
+		System.out.println(first - second);
+		System.out.println(first * second);
+		System.out.println(first / second);
+	}
+}
+
 
 
 
