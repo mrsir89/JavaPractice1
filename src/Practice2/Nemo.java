@@ -77,6 +77,40 @@
 //}
 
 
+//package Practice2;
+//
+//import java.util.Scanner;
+//
+//public class Nemo{
+//	
+//	private static final int[] MAX_DAYS = {31,28,31,30,31,30,31,31,30,31,30,31};
+//	public int maxDays(int input) {
+//		return MAX_DAYS[input - 1];
+//	}
+//	public static void main(String[] args) {
+//		Scanner scan = new Scanner(System.in);
+//		Nemo cal = new Nemo();			// class 이름
+//		
+//		System.out.print("반 복 횟 수 입 력 : ");
+//		int repeat = scan.nextInt();
+//		
+//		for(int i=0; i<repeat; i++) {
+//		System.out.println("달 입 력 : ");
+//		int input = scan.nextInt();
+//		
+//		System.out.printf("%d 월은 %d일 까지 있습니다 \n" ,input, cal.maxDays(input));
+//		}
+//		System.out.println("bye~");
+//	}
+//}
+
+
+
+
+
+
+
+
 package Practice2;
 
 import java.util.Scanner;
@@ -88,30 +122,28 @@ public class Nemo{
 		return MAX_DAYS[input - 1];
 	}
 	public static void main(String[] args) {
+		
+		String PROMPT = "cal> ";
 		Scanner scan = new Scanner(System.in);
 		Nemo cal = new Nemo();			// class 이름
-		
-		System.out.print("반 복 횟 수 입 력 : ");
-		int repeat = scan.nextInt();
-		
-		for(int i=0; i<repeat; i++) {
+	
+		int month= 1;
+		while(true) {
 		System.out.println("달 입 력 : ");
+		System.out.print(PROMPT);  
 		int input = scan.nextInt();
-		
+		if ( input == -1) {
+			break;
+		}
+		if ( input > 12) {
+			continue;
+		}
 		System.out.printf("%d 월은 %d일 까지 있습니다 \n" ,input, cal.maxDays(input));
 		}
+		
 		System.out.println("bye~");
 	}
 }
-
-
-
-
-
-
-
-
-
 
 
 
