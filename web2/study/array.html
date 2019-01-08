@@ -1,0 +1,73 @@
+<html>
+
+<head>
+   <meta charset="utf-8">
+    <script>
+        var input3 = prompt('write down', 'number');
+        var numberInput3 = Number(input3);
+        alert(typeof(numberInput3) + ':' + numberInput3);
+
+        if (12 > 99) {
+            document.write('ok');
+        } else if (12 > 33) {
+            document.write('2ok2');
+        } else if (12 > 2) {
+            document.write('good');
+        }
+        var list = '';
+        list += '<ul>';
+        list += '<li>hi</li>';
+        list += '<li>world!</li>';
+        list += '</ul>';
+        document.body.innerHTML = list;
+
+        var number = 10;
+        alert(number);
+        number++;
+        number++;
+        alert(number);
+        alert(number);
+
+        alert(typeof(variable));
+
+        var input = prompt('Message', 'DefStr');
+        alert(input);
+
+        var input2 = confirm('confirm함수 확인true1, 취소false0');
+        alert(input2);
+
+        alert('123+123'); //따옴표 안 String
+        alert('52' * 12); //자동형변환
+
+    </script>
+
+    <style media="screen">
+        h1 {
+            color: tomato;
+        }
+        #jeju{
+            background: green;
+        }
+        .island{
+            background: orange;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>hi hi hi</h1>
+    <p id="jeju">go to JEJU island-!!</p>
+    <p class='island'>Hello world-!!</p>
+    
+    <form action="https://www.advancedwebranking.com/html/#scripting">
+        <p>text <input type="text" name="id", value="d"></p>
+        <p>password <input type="password" name="pwd" value="d"></p>
+        <p>textarea <textarea cols="50" rows="10">dd</textarea></p>
+        <input type="submit">
+        <input type="button" value="버튼" onclick='alert("hello world")'>
+        
+    </form>
+</body>
+
+</html>
